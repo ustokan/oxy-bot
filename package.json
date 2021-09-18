@@ -1,8 +1,8 @@
 {
   "name": "oxy-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Discord бот для Oxygen Studio",
+  "main": "src/index.js",
   "engines": {
     "node": "16.7.0"
   },
@@ -10,11 +10,12 @@
     "start": "node ."
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Ustokan",
+  "license": "MIT",
   "dependencies": {
     "discord.js": "^13.1.0",
     "glob": "^7.1.7",
-    "mongodb": "^4.1.2"
+    "mongodb": "^4.1.2",
+    "winston": "^3.3.3"
   }
 }

@@ -1,4 +1,5 @@
 const Context = require('../structures/CommandContext');
+const { MessageEmbed } = require("discord.js");
 
 module.exports = class {
     constructor(client, message) {
@@ -18,7 +19,13 @@ module.exports = class {
     async runCommand() {
         if (this.message.author.bot) return;
         if (this.message.guild?.id !== '817401465302810676') {
-            return
+            return this.message.channel.send({
+                embeds: [
+                    new MessageEmbed().setColor('RED')
+                        .setTitle('Используйте на сервере')
+                        .setDescription('Вы можете использовать меня только на сервере, для которого я предназначен')
+                ]
+            })
         }
 
         let prefix = process.env.BOT_PREFIX;

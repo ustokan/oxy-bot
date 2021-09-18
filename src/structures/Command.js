@@ -7,7 +7,6 @@ module.exports = class {
         this.description = options.name || 'Помощь для команды не указана';
         this.category = options.category || 'Другое';
         this.aliases = options.aliases || [];
-        this.guildOnly = options.guildOnly || false;
         this.minArgs = options.minArgs || 0;
         this.usage = options.usage || 'Не указано';
         this.examples = options.examples || 'Не указано';
